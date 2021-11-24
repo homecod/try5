@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+            <img src="img/img2.jpg.jpg" alt="loding" class="img1">
+        </div>
+        <button id="menu" onclick="mybar()">Menu</button>
+            <ul class="main-nav" id="cheak">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTCT US</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+           
+        </nav>
+
+        <div class="main-line">
+            <h1>They are <span class="hun">hungry </span>but you are not</h1>
+            <br>
+            <p>those child are realy need your help pleace donate how much you can</p>
+        
+         
+            <a href="pament.html" class="btn btn1" >Donate now</a>
+            <a href="#" class="btn btn2">More View
+                
+            </a>
+        </div>
+    </header>
+    <script>
+        function mybar(){
+     var x=document.getElementById("cheak");
+     if(x.style.display=== "none"){
+         x.style.display ="block";
+     }else{
+         x.style.display= "none";
+     }
+        }
+    </script>
+</body>
+</html>

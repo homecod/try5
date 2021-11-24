@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(../img/img1.jpg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.row{
+    margin: auto;
+    display: inline;
+}
+.row img{
+    max-width: 90px;
+    border: 2px solid wheat;
+    border-radius: 50%;
+    margin: 9px;
+   margin-left: 40px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 90px;
+}
+.main-nav li a{
+    padding: 3px 0;
+color: rgb(247, 241, 241);
+text-decoration: none;
+font-size: 90%;
+font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid rgb(209, 12, 199);
+}
+.main-line{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 70px;
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+p{
+    color: #fff;
+    font-size: 130%;
+    margin-bottom: 15px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2, border 0.2, color 0.2;
+}
+.btn1{
+background: transparent;
+color: rgb(209, 12, 199);
+padding: 10px;
+border: 1px solid rgb(209, 12, 199);
+
+}
+.btn2{
+    background: transparent;
+color: rgb(246, 249, 252);
+padding: 10px;
+border: 1px solid rgb(242, 245, 248);
+}
+.btn1:hover{
+    background-color: rgb(236, 245, 237);
+}
+.btn2:hover{
+background-color: rgb(165, 12, 12);
+}
+.hun{
+    animation: chang 3s infinite;
+}
+@keyframes chang {
+    0%{
+        color:white;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color:white;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color: white;
+    }
+}
+#menu{
+    display: none;
+}
+
+/* res ponsive using media qure*/
+@media only screen and (max-width: 1088px){
+    .main-line{
+        
+        padding: 2px 2px;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{
+        font-size: 200%;
+    }
+    p{
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+.main-nav{
+    display: none;
+}
+#menu{
+    display: inline-block;
+    font-size: 100%;
+
+    margin: 21px 10px;
+    padding: 1%;
+    border-radius: 50%;
+    color: rgb(250, 244, 249);
+    background: black;
+
+}
+.main-nav li{
+    display: block;
+   
+    margin-top: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
